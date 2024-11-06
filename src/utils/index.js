@@ -99,5 +99,6 @@ export function getPokedexNumber(index) {
 }
 
 export function getFullPokedexNumber(index) {
-    return `${index + 1 > 99 ? index + 1 : index + 1 > 9 ? `0${index + 1}` : `00${index + 1}`}`
+    const number = (index + 1).toString();  // Convert to string after incrementing
+    return number.padStart(3, '0');         // Pads the result to three characters
 }

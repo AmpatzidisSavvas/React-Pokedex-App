@@ -161,7 +161,7 @@ export default function PokeCard(props) {
           </div>
           <img
             className="default-img"
-            src={"/pokemon/" + getFullPokedexNumber(selectedPokemon) + ".png"}
+            src={`/React-Pokedex-App/pokemon/${getFullPokedexNumber(selectedPokemon)}.png`}
             alt={`${name}-large-img`}
           />
           <div className="img-container">
